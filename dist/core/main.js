@@ -1,0 +1,1 @@
+define(["require","exports","module","jquery","templ!./message-example"],function(e,t,n){var r=e("jquery"),i=e("templ!./message-example");r(function(){r(i({message:"core module is up!"})).appendTo("#viewport")})})
