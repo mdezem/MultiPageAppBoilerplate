@@ -15,4 +15,12 @@ vendor/underscore.js
 vendor/backbone.js
 css!assets/css/bootstrap
 vendor/bootstrap.js
+lib/util.js
 main.js
+
+page1/main.js
+----------------
+templ!page1/loadmessage
+page1/dep1.js
+page1/dep2.js
+page1/main.js

@@ -39,9 +39,13 @@
         "backbone",
         "hogan",
         "css!assets/css/bootstrap",
-        "bootstrap"],
+        "bootstrap",
+        "lib/util"  // app lib modules
+        ],
         function () {
             var $ = require("jquery"),
+                // the startmodule is defined on the same script tag of data-main.
+                // example: <script data-main="main.js" data-start="pagemodule/main" src="vendor/require.js"/>
                 startModuleName = $("script[data-main][data-start]").attr("data-start");
 
             if (startModuleName) {

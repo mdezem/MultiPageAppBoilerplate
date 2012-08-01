@@ -5,6 +5,10 @@
     modules: [
         {
             name: "main"
+        },
+        {
+            name: "page1/main",
+            exclude: ["main"]
         }
     ],
     paths: {

@@ -1,0 +1,1 @@
+define(["require","exports","module","jquery","templ!./loadmessage"],function(e,t,n){var r=e("jquery"),i=e("templ!./loadmessage");r(function(){r(i({module:"dep2"})).appendTo("#viewport")})})
