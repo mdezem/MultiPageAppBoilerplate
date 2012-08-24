@@ -44,15 +44,17 @@
         ],
         function () {
             var $ = require("jquery"),
-                // the startmodule is defined on the same script tag of data-main.
-                // example: <script data-main="main.js" data-start="pagemodule/main" src="vendor/require.js"/>
+            // the startmodule is defined on the same script tag of data-main.
+            // example: <script data-main="main.js" data-start="pagemodule/main" src="vendor/require.js"/>
                 startModuleName = $("script[data-main][data-start]").attr("data-start");
 
             if (startModuleName) {
                 require([startModuleName], function (startModule) {
-                    var fn = $.isFunction(startModule) ? startModule : startModule.init;
-                    if (fn) { fn(); }
+                    $(function () {
+                        var fn = $.isFunction(startModule) ? startModule : startModule.init;
+                        if (fn) { fn(); }
+                    });
                 });
             }
         });
-}());
+} ());

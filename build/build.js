@@ -7,7 +7,10 @@
             name: "main"
         },
         {
+            // create a module for page1/main and include in it
+            // all its dependencies (dep1, dep2, loadtemplate)
             name: "page1/main",
+            // excluding any dependency that is already included on main module
             exclude: ["main"]
         }
     ],
