@@ -26,16 +26,19 @@ Included in this boilerplate:
 ## Directory structure ##
 
 /src - source code for the entire application 
+
 /src/vendor - 3rd party libraries
+
 /src/lib - application specific libraries
+
 /src/assets - css and image files
+
 /src/core - module example
+
 /src/page1 - multi scripts module example
    
+
+
 /build - build scripts and configuration
+
 /dist - output for build operations
-
-## Build ##
-
-For build is required nodejs 
-*todo*
