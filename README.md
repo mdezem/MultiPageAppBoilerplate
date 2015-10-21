@@ -1,6 +1,9 @@
 ﻿# Web app boilerplate #
 
 This is a boilerplate to init a web application using requirejs.
+
+More info: http://stackoverflow.com/a/11730147
+
 Included in this boilerplate:
 
 *  [requirejs][]
